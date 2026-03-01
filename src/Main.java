@@ -1,16 +1,24 @@
 public class Main{
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
-
-        Product product = new Product("asus", 8);
+        Product products = new Product("Phone",13);
 
         try{
-            product.sifarisVer(9);
-        }catch(OutOfStockException e){
-            System.out.println(e.getMessage());
+            products.Order(19);
+
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
+
+        }catch(OutOfStockException e){
+        System.out.println(e.getMessage());
         }
+
+
+
+
+
+
+
 
     }
 }
