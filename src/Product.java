@@ -28,7 +28,7 @@ public class Product {
         if(number < 0){
             throw new IllegalArgumentException("Zəhmət olmasa müsbət rəqəm daxil edin");
 
-        }if(number > stock || stock < 0){
+        }if(number > stock || stock == 0){
             throw new OutOfStockException("Stock da kifayət qədər məhsul yoxudr!");
 
         }else{
